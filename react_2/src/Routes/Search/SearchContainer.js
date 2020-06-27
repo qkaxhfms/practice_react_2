@@ -10,11 +10,21 @@ export default class extends React.Component {
         error:null
     };
 
-    handleSubmit = () => {
+    handleSubmit = event => {
+        event.preventDefault();
         cosnt {searchTerm} = this.state;
         if(searchTerm !== ""){
             this.searchByTerm();
         }
+    }
+
+    updateTerm = event =>{
+        const{
+            target : {value}
+        } = event;
+        this.setState({
+            searchTerm:value
+        })
     }
 
     searchByTerm = async () => {
@@ -39,7 +49,13 @@ export default class extends React.Component {
     render(){
         const{movieResults,searchTerm,loading,error} = this.state;
         return{
-            <SearchPresenter movieResults={movieResults},searchTerm={searchTerm},loading={loading},error={error} handleSubmit={this.handleSubmit}/>
+            <SearchPresenter movieResults={movieResults},searchTerm={searchTerm},loading={loading},error={error} handleSubmit={this.handleSubmit} updateTerm={useImperativeHandle(
+                ref,
+                () => {
+                    handler
+                },
+                [input],
+            )}/>
         }
     }
 }
