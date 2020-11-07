@@ -27,3 +27,7 @@ Node.js, Yarn, Editor
 
 - 태그는 곡 닫혀있어야 한다.
 - 다중 사용 시 FRAGMENT 사용 필수 <></>
+
+## props
+
+- properties의 줄임말 / 우리가 어떠한 값을 컴포넌트에 전달해 주어야 할때 props를 사용한다.

@@ -1,5 +1,7 @@
 import React from 'react';
 import Hello from './Hello';
+import Box from './Box';
+import Wrapper from './Wrapper';
 import './css/App.css';
 
 function App() {
@@ -11,7 +13,7 @@ function App() {
     padding:'1rem'
   }
   return (
-    <div>
+    <Wrapper>
       <Hello />
       <Hello />
       <Hello />
@@ -19,7 +21,10 @@ function App() {
       /* 주석은 이렇게 쓰면 안됨 */
       <p style={style}>{name}</p>
       <div className="gray-box"></div>
-    </div>
+      <br />
+      <Box name="react" color="red" />
+      <Box color="blue" />
+    </Wrapper>
   );
 }
 
