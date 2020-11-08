@@ -22,7 +22,7 @@ function App() {
       <p style={style}>{name}</p>
       <div className="gray-box"></div>
       <br />
-      <Box name="react" color="red" />
+      <Box name="react" color="red" isSpecial={true}/>
       <Box color="blue" />
     </Wrapper>
   );
