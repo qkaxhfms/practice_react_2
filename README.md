@@ -32,3 +32,7 @@ Node.js, Yarn, Editor
 
 - properties의 줄임말 / 우리가 어떠한 값을 컴포넌트에 전달해 주어야 할때 props를 사용한다.
 - 비구조화할당
+
+## useState
+
+컴포넌트에서 동적인 값을 상태 (state)라고 부릅니다. 리액트 useState란 함수가 있는데요.

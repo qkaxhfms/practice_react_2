@@ -1,7 +1,9 @@
 import React from 'react';
 import Hello from './Hello';
 import Box from './Box';
+import Practice from "./Practice";
 import Wrapper from './Wrapper';
+import Counter from "./Counter";
 import './css/App.css';
 
 function App() {
@@ -22,8 +24,11 @@ function App() {
       <p style={style}>{name}</p>
       <div className="gray-box"></div>
       <br />
-      <Box name="react" color="red" isSpecial={true}/>
+      <Box name="react" color="red" isSpecial={true} />
       <Box color="blue" />
+      <Practice aaa="111" bbb="222" ccc="333" ddd="444" />
+      <Practice />
+      <Counter />
     </Wrapper>
   );
 }
