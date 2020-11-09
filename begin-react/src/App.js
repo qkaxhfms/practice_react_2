@@ -5,6 +5,7 @@ import Practice from "./Practice";
 import Wrapper from './Wrapper';
 import Counter from "./Counter";
 import Counter2 from "./Counter2";
+import InputSample from "./InputSample";
 import './css/App.css';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <Box color="blue" />
       <Practice aaa="111" bbb="222" ccc="333" ddd="444" />
       <Practice />
+      <InputSample />
       <Counter />
       <Counter2 />
     </Wrapper>

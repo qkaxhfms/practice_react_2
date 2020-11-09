@@ -18,7 +18,7 @@ function Counter2() {
   return (
     <>
       <h1>Counter2</h1>
-  <h2>{number}</h2>
+      <h2>{number}</h2>
       <button onClick={onIncrease}>+1</button>
       <button onClick={onDecrease}>-1</button>
     </>
