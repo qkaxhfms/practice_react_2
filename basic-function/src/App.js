@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Test3 from './components/Test3';
+import Test4 from './components/Test4';
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        <Test3 />
+        <Test4 />
       </div>
     )
   }
