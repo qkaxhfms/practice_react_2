@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class Test1 extends Component {
+class Test1 extends Component {
     render() {
         const name = "홍길동";
         const age = 20;
@@ -19,3 +19,5 @@ export default class Test1 extends Component {
         )
     }
 }
+
+export default Test1;

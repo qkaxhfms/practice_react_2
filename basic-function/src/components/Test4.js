@@ -11,6 +11,7 @@ class Test4 extends Component {
                     addr="서울시 서초구"
                     done={true}
                     color="red"
+                border="yellow"
                 />
             </div>
         )

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class Test3 extends Component {
+class Test3 extends Component {
     render() {
         const done = true
 
@@ -13,3 +13,5 @@ export default class Test3 extends Component {
         )
     }
 }
+
+export default Test3;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class Test2 extends Component {
+class Test2 extends Component {
     render() {
         const title ='타이틀'
         const customStyle = {
@@ -16,3 +16,6 @@ export default class Test2 extends Component {
         )
     }
 }
+
+export default Test2;
+
