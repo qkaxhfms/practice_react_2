@@ -1,9 +1,9 @@
 import React from 'react';
-import Test2 from './Components/Test2';
+import Test3 from './Components/Test3';
 
 function App() {
   return (
-    <Test2 />
+    <Test3 />
   );
 }
 
