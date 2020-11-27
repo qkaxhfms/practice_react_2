@@ -13,11 +13,12 @@ class Test4 extends Component {
         ],
     };
     render() {
+        const {data} = this.state;
         return (
             <div>
                 <h3>메인</h3>
                 <div>
-                    {this.state.data.map((item) => (
+                    {data.map((item) => (
                         <p>
                             {item.no}/{item.name}/{item.age}/{item.addr}/{item.done === true ? "참여" : "미참여"}
                         </p>
