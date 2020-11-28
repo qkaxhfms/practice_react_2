@@ -20,7 +20,14 @@ class Test4 extends Component {
                 <div>
                     {data.map((item) => (
                         <p>
-                            {item.no}/{item.name}/{item.age}/{item.addr}/{item.done === true ? "참여" : "미참여"}
+                            {item.no}/<br />
+                            {item.name}/<br />
+                            {item.age}/<br />
+                            {item.addr}/<br />
+                            {item.done === true ? "참여" : "미참여"}/<br />
+                            {item.done || "or 결과"}
+                            <br />
+                            {item.done && "and 결과"}
                         </p>
                     ))}
                 </div>
