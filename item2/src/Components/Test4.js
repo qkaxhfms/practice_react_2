@@ -27,7 +27,7 @@ class Test4 extends Component {
                             {item.done === true ? "참여" : "미참여"}/<br />
                             {item.done || "or 결과"}
                             <br />
-                            {item.done && "and 결과"}
+                            {item.done && "and 수정"}
                         </p>
                     ))}
                 </div>
