@@ -11,6 +11,18 @@ class Test1 extends Component {
             { no: 6, name: "엄정화", age: 23, done: true },
         ],
     };
+
+    handleAdd1 = () => {
+        this.setState({
+            data:this.state.data.concat({no:7,name:'아무개',age:200,done:true})
+        })
+    }
+    handleAdd2 = () => {
+        this.setState({
+            data:this.state.data.concat({no:8,name:'가나다',age:100,done:false})
+        })
+    }
+
     render() {
         return (
             <div>
@@ -20,7 +32,11 @@ class Test1 extends Component {
                             {item.no} / {item.name} / {item.age} / {item.done === true ? '이상':'이하'}
                         </li>)
                     }
-                    </ul>
+                </ul>
+                <div>
+                    <button onClick={this.handleAdd1}>추가1</button>
+                    <button onClick={this.handleAdd2}>추가2</button>
+                </div>
             </div>
         );
     }
