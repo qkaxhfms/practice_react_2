@@ -1,0 +1,12 @@
+*{margin:0; padding:0}
+ul,li { list-style: none;}
+img{vertical-align:baseline;width:100%;}
+.gallery {padding:20px; display:flex; flex-direction: row ; flex-wrap: wrap ; }
+.gallery article { display:flex;flex-basis:50%;}
+.gallery .left {width:50%;}
+.gallery .left img {object-fit:cover;}
+.gallery .right {width:50%;box-sizing: border-box; background: #efefef; padding:20px}
+.gallery .right h3 {font-size:20px; margin-bottom:20px}
+.gallery .right ul {margin-bottom:35px}
+.gallery .right li {line-height: 35px; border-bottom:1px solid #dcdcdc}
+.gallery .right button {width:120px; height:35px; background:#333; color:#fff}
