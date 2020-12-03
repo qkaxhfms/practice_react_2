@@ -2,7 +2,8 @@
 ul,li { list-style: none;}
 img{vertical-align:baseline;width:100%;}
 .gallery {padding:20px; display:flex; flex-direction: row ; flex-wrap: wrap ; }
-.gallery article { display:flex;flex-basis:50%;}
+.gallery article { display:flex;flex-basis:50%;margin:10px 0;}
+.gallery>div{height:300px;}
 .gallery .left {width:50%;}
 .gallery .left img {object-fit:cover;}
 .gallery .right {width:50%;box-sizing: border-box; background: #efefef; padding:20px}
