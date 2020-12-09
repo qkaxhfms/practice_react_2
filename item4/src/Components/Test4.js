@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "./test4.css";
+import "./test.css";
 
 import Test4Sub1 from './Test4Sub1';
 import Test4Sub2 from './Test4Sub2';
