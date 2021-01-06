@@ -26,5 +26,5 @@ export default function HooksUseScroll(){
 };
 
 const Wrapper = styled.div`
-    height:1000vh;
+    height:800vh;
 `
