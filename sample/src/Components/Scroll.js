@@ -10,7 +10,7 @@ const Scroll = () => {
         setState({x:window.scrollX, y:window.scrollY})
     }
     useEffect(()=>{
-        window.addEventListener("scroll",onScroll)
+        window.addEventListener("scroll",onScroll) // <-- scroll이 window에서 처음 실행되는 것
         return () => {window.removeEventListener("scroll",onScroll)}// 컴포넌트가 삭제될때 떠나가는 이벤트 리스너를 지워줌
     },[])// ComponentDidMount일때만 실행
     return state
@@ -18,13 +18,20 @@ const Scroll = () => {
 
 export default function HooksUseScroll(){
     const {y} = Scroll()
-    return(
+    return (
         <Wrapper>
-            <h1 style={{position:"fixed",color:y>100 ? "red":"blue"}}>하이</h1>
+            <Title y={y}>하이</Title>
+            {/* <Title /> */}
+            {/* <Title style={{ position: "fixed", color: y > 100 ? "red" : "blue" }}>하이</Title> */}
         </Wrapper>
-    )
+    );
 };
 
 const Wrapper = styled.div`
     height:800vh;
 `
+const Title = styled.h1`
+    /* ${(props) => (props.y > 100 ? "red" : "blue")} */
+    position:fixed;
+    color: ${({y}) => (y > 100 ? "red" : "blue")};
+`;
