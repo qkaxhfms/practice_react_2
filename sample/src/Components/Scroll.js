@@ -7,7 +7,11 @@ const Scroll = () => {
         y:0,
     })
     const onScroll = () => {
-        setState({x:window.scrollX, y:window.scrollY})
+        setState({
+            x:window.scrollX,
+            y:window.scrollY
+        })
+        console.log(window.scrollY)
     }
     useEffect(()=>{
         window.addEventListener("scroll",onScroll) // <-- scroll이 window에서 처음 실행되는 것
