@@ -1,10 +1,10 @@
 import React from "react";
-import Utils1 from "./Components/Utils1";
+import Utils2 from "./Components/Utils2";
 
 const App = () => {
     return (
         <div className="App">
-            <Utils1 />
+            <Utils2 />
         </div>
     );
 };
