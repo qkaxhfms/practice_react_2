@@ -1,10 +1,10 @@
 import React from "react";
-import Utils2 from "./Components/Utils2";
+import InputStep2 from "./Components/InputStep2";
 
 const App = () => {
     return (
         <div className="App">
-            <Utils2 />
+            <InputStep2 />
         </div>
     );
 };
