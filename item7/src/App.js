@@ -1,10 +1,10 @@
 import React from "react";
-import InputStep2 from "./Components/InputStep2";
+import CustomUseRef from "./Components/CustomUseRef";
 
 const App = () => {
     return (
         <div className="App">
-            <InputStep2 />
+            <CustomUseRef />
         </div>
     );
 };

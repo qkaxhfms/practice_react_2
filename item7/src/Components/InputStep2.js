@@ -6,6 +6,7 @@ const InputStep2 = () => {
         id: "",
         pw: "",
     });
+    const { id, pw } = user;
     const inputChange = (e) => {
         setUser({
             ...user,
@@ -25,20 +26,15 @@ const InputStep2 = () => {
                 type="text"
                 name="id"
                 onChange={inputChange}
-                value={user.id}
+                value={id}
                 ref={idInput}
             />
-            <input
-                type="text"
-                name="pw"
-                onChange={inputChange}
-                value={user.pw}
-            />
+            <input type="text" name="pw" onChange={inputChange} value={pw} />
             <button type="button" onClick={inputReset}>
                 초기화
             </button>
             <p>
-                {user.id},{user.pw}
+                {id},{pw}
             </p>
         </>
     );
