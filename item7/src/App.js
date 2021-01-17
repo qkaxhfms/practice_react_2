@@ -1,10 +1,10 @@
 import React from "react";
-import CustomUseRef from "./Components/CustomUseRef";
+import Counter from "./Components/Counter";
 
 const App = () => {
     return (
         <div className="App">
-            <CustomUseRef />
+            <Counter />
         </div>
     );
 };
